@@ -1,0 +1,54 @@
+baseurl         = "https://datasingularity.org"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+
+[params]
+  title       = "Digital Codex"
+  subtitle    = "A collection of artifacts related to understanding and visualizing DATA"
+
+  cover       = "HomeCover.jpeg"
+  description = "Learn * Think * Design * Code"
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "agnurva"
+  githubName = "agnurva"
+
+  logo = ""
+  orgName = "Data Singularity"
+  orgWebsite = "https://datasingularity.org"
+  orgDescription = "A collection of ideas to achieve Data Singularity"
+
+  author = "Clement Francis"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bengaluru, India"
+  authorWebsite = "https://datasingularity.org"
+  authorDescription = "Data Analytics and Visualization Enthusiast"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "About"
+  url = "/categories/About"
+  weight = 150
+
+[[menu.main]]
+  name = "Data"
+  url = "/categories/Projects/"
+  weight = 99
