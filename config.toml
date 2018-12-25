@@ -7,7 +7,7 @@ paginate        = 6
 
 [params]
   title       = "Digital Codex"
-  subtitle    = "A collection of artifacts related to understanding and visualizing DATA"
+  subtitle    = "\"You cannot open a book without learning something.\"- Confucius"
 
   cover       = "HomeCover.jpeg"
   description = "Learn * Think * Design * Code"
@@ -49,6 +49,14 @@ paginate        = 6
   weight = 150
 
 [[menu.main]]
-  name = "Data"
-  url = "/categories/Projects/"
+  name = "Data Blogs"
+  url = "/categories/Projects"
   weight = 99
+
+[[menu.main]]
+  name = "Life Blogs"
+  url = "/categories/Projects"
+  weight = 99
+
+
+
