@@ -1,10 +1,10 @@
 ---
 title: "An Introduction to Data Visualization"
 date: 2018-12-26T14:56:54+05:30
-draft: false
-image: ""
-category: "Visualization"
-tags: "Visualization", "Data Analysis"
+image: "Intro_to_viz.jpg"
+tags: ["Data"]
+categories: ["Visualization","Data Analysis"]
+
 ---
 Data visualization refers to the techniques used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand and communicate data.
 
@@ -12,7 +12,6 @@ Data visualization refers to the techniques used to understand and communicate d
 Consider the data given below. It consists of 4 different datasets with two variables 'x' and 'y' in each set.
 Each dataset consists of 11 observations.
 
-|   I|   |   II|   |   III|   |   IV|   |
 | x  | y  | x  | y  |  x | y  | x  | y  |
 |---|---|---|---|---|---|---|---|
 10.0 |	8.04 |	10.0 |	9.14 |	10.0 |	7.46 |	8.0 |	6.58

@@ -37,7 +37,7 @@ paginate        = 6
   singleViewStyle = "casper"
 
 [permalinks]
-  post = "/:slug/"
+  post = "/post/:slug/"
 
 [[menu.main]]
   name = "Home"
@@ -46,10 +46,10 @@ paginate        = 6
 
 [[menu.main]]
   name = "Data Blogs"
-  url = "/categories/Projects"
+  url = "/tags/Data"
   weight = 99
 
 [[menu.main]]
-  name = "Life Blogs"
-  url = "/categories/Projects"
-  weight = 99
+  name = "Categories"
+  url = "/categories/"
+  weight = 95
