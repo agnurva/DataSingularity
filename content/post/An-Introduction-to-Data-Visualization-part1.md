@@ -1,5 +1,5 @@
 ---
-title: "An Introduction to Data Visualization"
+title: "An Introduction to Data Visualization-Part 1"
 date: 2018-12-26T14:56:54+05:30
 image: "Intro_to_viz.jpg"
 tags: ["Data"]
@@ -35,8 +35,9 @@ Anscombe uses simple dots to represent the data in two dimensions to represent e
 
 I have taken most of the above extracts from Wikipedia and used Bokeh Visualization to recreate this amazing piece of work. Please check the reference section for more details.
 
-I hope with this blog I have provided a glimpse of how important Visualization is when analysing data. In my subsequent posts I will try and recreate few other famous visualizations. By the end of this introductory series I wish to expose the audience to what little I know about the art and science of Visualization.
+I hope with this blog I have provided a glimpse of how important Visualization is when analysing data. In my subsequent posts I will try and recreate few other famous visualizations. By the end of this 3 part introductory series I wish to expose the audience to what little I know about the art and science of Visualization.
 
 ### References
 [Anscombe's Quartet - Wikipedia](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)
+
 [Recreation of Visualization using Bokeh](https://github.com/agnurva/WorkingDirectoryBackup/blob/master/Anscombe_Quartet.ipynb)
