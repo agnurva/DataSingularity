@@ -6,24 +6,37 @@ tags: ["Data"]
 categories: ["Visualization","Data Analysis"]
 
 ---
-Data visualization refers to the techniques used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand and communicate data.
+Data visualization refers to the techniques used to understand and communicate data or information by encoding it as visual objects (e.g., points, lines or bars). It is a very important skill to possess when working with data and is an absolute must for all data analysts and data scientists. In this blog I will try and illustrate the importance of using visual objects to understand data communicate data.
 
-## Understanding data
-Consider the data given below. It consists of 4 different datasets with two variables 'x' and 'y' in each set.
-Each dataset consists of 11 observations.
+Consider the data given below. It consists of features(attributes) 'x' and 'y' related to 4 different entities with 11 observations(tuples) each. Assume that the objective is to find the similarity between the entities.
+![](/anscombes_quartet.png)
+ A data analyst would typically go about this problem by quantitatively describing or summarizing the features. This process is know as descriptive or summary stastics. A simple summary stats of the above dataset is given below. Please note that values are approximated to 2 decimal places.
 
-| x  | y  | x  | y  |  x | y  | x  | y  |
-|---|---|---|---|---|---|---|---|
-10.0 |	8.04 |	10.0 |	9.14 |	10.0 |	7.46 |	8.0 |	6.58
-8.0 |	6.95 |	8.0 |	8.14 |	8.0 |	6.77 |	8.0 |	5.76
-13.0 |	7.58 |	13.0 |	8.74 |	13.0 |	12.74 |	8.0 |	7.71
-9.0 |	8.81 |	9.0 |	8.77 |	9.0 |	7.11 |	8.0 |	8.84
-11.0 |	8.33 |	11.0 |	9.26 |	11.0 |	7.81 |	8.0 |	8.47
-14.0 |	9.96 |	14.0 |	8.10 |	14.0 |	8.84 |	8.0 |	7.04
-6.0 |	7.24 |	6.0 |	6.13 |	6.0 |	6.08 |	8.0 |	5.25
-4.0 |	4.26 |	4.0 |	3.10 |	4.0 |	5.39 |	19.0 |	12.50
-12.0 |	10.84 |	12.0 |	9.13 |	12.0 |	8.15 |	8.0 |	5.56
-7.0 |	4.82 |	7.0 |	7.26 |	7.0 |	6.42 |	8.0 |	7.91
-5.0 |	5.68 |	5.0 |	4.74 |	5.0 |	5.73 |	8.0 |	6.89
+ Property |	Value 	
+ ---------|----------
+Mean of x 	|9 	
+Sample variance of x |	11 	
+Mean of y |	7.50 	
+Sample variance of y |	4.12
+Correlation between x and y |	0.81
+Linear regression line |	y = 3.00 + 0.50x
+Coefficient of determination of the linear regression |	0.67 	
 
-## Communicating information
+Based on these finding one can conclude that the entities are very similar. However, such a conclusion could not be further away from reality. To get a better understanding of the data one would need to dig deeper and this is difficult since most people cannot percieve the layout of data by merely looking at number. Thankfully, this is where Visualization can help us.
+![](/anscombe_quartet_viz.png)
+The above image is famously known as the Anscombe's quartet constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers on statistical properties. He described the article as being intended to counter the impression among statisticians that "numerical calculations are exact, but graphs are rough."
+
+Anscombe uses simple dots to represent the data in two dimensions to represent each of the features x and y. As many of you already know this is commonly know as a scatter plot. This simple visual representation provides an easy means to understand the layout of data which was difficult to percieve through the summary stats. From the visualization we can draw the following conclusions:
+
+* The first scatter plot (top left) appears to be a simple linear relationship  and following the assumption of normality.
+* The second graph (top right) is not distributed normally; while a relationship between the two variables is obvious, it is not linear, and the Pearson correlation coefficient is not relevant. A more general regression and the corresponding coefficient of determination would be more appropriate.
+* In the third graph (bottom left), the distribution is linear, but should have a different regression line. The calculated regression is offset by the one outlier which exerts enough influence to lower the correlation coefficient from 1 to 0.816.
+* Finally, the fourth graph (bottom right) shows an example when one outlier is enough to produce a high correlation coefficient, even though the other data points do not indicate any relationship between the variables.
+
+I have taken most of the above extracts from Wikipedia and used Bokeh Visualization to recreate this amazing piece of work. Please check the reference section for more details.
+
+I hope with this blog I have provided a glimpse of how important Visualization is when analysing data. In my subsequent posts I will try and recreate few other famous visualizations. By the end of this introductory series I wish to expose the audience to what little I know about the art and science of Visualization.
+
+### References
+[Anscombe's Quartet - Wikipedia](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)
+[Recreation of Visualization using Bokeh](https://github.com/agnurva/WorkingDirectoryBackup/blob/master/Anscombe_Quartet.ipynb)
