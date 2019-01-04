@@ -13,9 +13,9 @@ Hello folks, I hope you found part one of the Introducution to visualization ser
 Let me take you folks back in time to the 19th century, which saw a large scale change in the sociatial structures around the world. Slavery was abolished, and the Second Industrial Revolution led to massive urbanization and significantly higher levels of productivity. This also gave rise to a massive migration of people from all over to large cities for work. The living conditions of these working class people was not planned and they were frequently prone to diseases usually in waves of epimedics that took many lives.
 
 People believed that the origin of epidimics was a noxious form of "bad air", also known as night air and this theory was known as the Miasma theory. Diseases such as cholera, chlamydia, or the Black Death were though to have been caused by this foul air. However, John snow had studied cholera outbreaks throughout his life and was skeptical about the theory. Through his observations he believed that the disease is spread through water and was out to prove the medical community wrong about the Miasma theory. John snow knew that the city water was supplied by two companies and decided to conduct a double blind study. His study provided evidence that the company that was supplying water form downstream Thames river caused the diseases since it was contaminated with the sanitary wastes from the city. His theory was not accepted and life went on until a severe outbreak of cholera occurred in 1854 near Broad Street. John Snow was quick the reach the spot and collect data related to death and water source in the neighbourhood. He plotted this data on a map of the city and was successful in convincing the authorities about his theory which led to them removing the handle of the contaminated water pump. Given below is the original map created by John Snow.
-![](john_snow_orignial.png)
+![](/john_snow_orignial.png)
 I have recreated the visualization using Google maps and Bokeh visualization. Please not that the layout of the map has changed over the years.
-![](john_snow_recreation.png)
+![](/john_snow_recreation.png)
 
 * The black dots on the map indicates the deaths due to cholera
 * The red dot indicates the water source(water pump)
